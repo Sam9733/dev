@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --pcolor:#F87060;
+    --scolor:#B3A394;
+    --lcolor:#1d61c2;
+    --lccolor:#102542;
+}
+
+h1{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #AA1155;
+    background-color: rgb(157, 104, 207);
+    text-decoration: solid;
+}
+ul{
+    text-align: center;
+    list-style-type: none;
+    background-color: var(--scolor);
+}
+nav li{
+    padding: 10px 10px;
+    display: inline-block;
+    color: var(--pcolor);
+    background-color: var(--lcolor);
+    border-radius: 15px;
+}
+li:hover{
+    cursor:pointer;
+    background-color: var(--lccolor);
+}
