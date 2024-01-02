@@ -1,0 +1,121 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --w:296px;
+    --h:100px;
+}
+.icon:hover{
+    cursor: pointer;
+    color: gray;
+}
+i{
+    font-size: 9px;
+}
+.icon{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.symbol img{
+    width: 12vw;
+}
+.symbol{
+    padding-right: 35vw;
+    padding-left: 10vw;
+}
+.trans{
+    font-size:larger;
+}
+nav{
+    display: flex;
+    gap: 1vw;
+    align-items:center;
+    margin-top: 2vw;
+    justify-content: center;
+}
+div h2{
+    font-weight: lighter;
+    text-align: center;
+    margin: 11vh 0;
+    margin-bottom: 5vh;
+    font-size: xxx-large;
+    width: 51vw;
+}
+.sl1{
+    text-align: center;
+    line-height: 5vh;
+    font-size: x-large;
+}
+.content{
+    width: 50vw;
+    padding: 0 25vw;
+}
+.sl2{
+    text-align: center;
+    background-color: #00b6d1;
+    color: white;
+    font-weight: bold;
+    padding: 3vh 0;
+    margin: 5vh 13vw;
+    width: 25vw;
+    border-radius: 4px;
+}
+.symbol1 img{
+    width: 3vw;
+    margin-left: 24vw;
+    margin-top: 5vh;
+    margin-right: 2vw;
+}
+.text1{
+    font-size: large;
+}
+.text2{
+    font-size: small;
+    color: gray;
+}
+.sl2:hover{
+    background-color: #008ba0;
+}
+.container{
+    width: 50vw;
+    display: grid;
+    grid-template-columns: var(--w ) var(--w) var(--w);
+    grid-template-rows: var(--h ) var(--h) var(--h) var(--h);
+    padding: 10vh 24vw;
+    justify-content: center;
+    gap: 23px;
+}
+.items{
+    width:var(--w);
+    height:var(--h);
+    background-color: rgba(222, 222, 222, 0.31);
+}
+.cells{
+    text-align: center;
+    padding: 10px 0;
+}
+.box{
+    display: inline-block;
+    width: 41%;
+    text-align: center;
+    color:white;
+    padding: 2%;
+    font-size:x-small;
+    border-radius: 4px;
+    margin-top: 8%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.green{
+    background-color: #5cb85c;
+    margin-right: 4%;
+}
+.blue{
+    background-color: #00b6d1;
+    margin-left: 4%;
+}
