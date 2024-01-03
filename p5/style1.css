@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    background-color: blue;
+    height: 80vh;
+    margin: 20vh 2vw;
+    position: relative;
+}
+
+.ball{
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+}
+.translate{
+    transform: translateX(4vw) translateY(-40vh);
+}

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    background-color: blue;
+    height: 80vh;
+    margin: 20vh 2vw;
+    position: relative;
+}
+
+.ball{
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    /* animation-name: bounce.bounc1 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 1, 1, 1);
+    animation-direction: alternate-reverse; */
+    /* animation:bounce 3s cubic-bezier(0, 1, 1, 1)  infinite, bounce1 3s cubic-bezier(0, 1, 1, 1)  infinite; */
+    animation: bounce 3s linear  infinite ,bounce1 1s cubic-bezier(0, 1, 1, 1)  infinite alternate ;
+}
+@keyframes bounce {
+    from{
+        left:0
+    }
+
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes bounce1 {
+    from{
+        bottom: 0;
+    }
+
+    to{
+        bottom: 100%;
+    }
+}
