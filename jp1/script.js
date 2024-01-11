@@ -16,4 +16,4 @@ buttons.forEach(function (button) {
             case(purple): body.style.backgroundColor=event.target.id
         }
     })
-}) 
+})  
