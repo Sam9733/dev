@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <!-- back then when there was no fetch func we use to do it with
+    xmlreqest 
+0-unsent 1-opened 2-header_recieved 3-loading 4-done -->
+
+<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+<p>SAM</p>
+<span id="insert"></span>
+<button id="send">Click</button>
+</div>
+</body>
+<script>
+    const requestURL='https://api.github.com/users/Sam9733'
+   const xhr=new XMLHttpRequest();
+   xhr.open('GET',requestURL) //open itself doesnt call so we need send to call it
+   
+   xhr.onreadystatechange=function(){
+    console.log(xhr.readyState)//track the state
+    if(xhr.readyState===4)
+    {
+      const data=JSON.parse(this.responseText)
+        console.log(typeof data) //string most of the time the response are in string
+        //so we need to convert it to object so we put JSON.parse
+        console.log(data.login)
+        let insrt=document.querySelector('#insert');
+         let click=document.querySelector('#send');
+        function senddata(){
+            let imgelement=document.createElement('img');
+            imgelement.src=data.avatar_url;
+            insrt.innerHTML=''
+            insrt.appendChild(imgelement)
+        }
+    click.addEventListener('click',senddata)
+    }
+}
+  xhr.send()
+ 
+
+</script>
+</html>
